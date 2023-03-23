@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+    
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(213,46,160,0.7), 
+        rgba(147, 152, 248,0.7)),
+         url(/images/banner.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav img{
+    width: 150px;
+    }
+    
+    .nav-links{
+        flex: 1;
+        text-align: right;
+    }
+    
+    .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+    
+    .nav-links ul li a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    
+    .nav-links ul li ::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: red;
+        display: block;
+        margin: auto;
+        transition: 1.5s;
+       
+    }
+    
+    .nav-links ul li :hover::after{
+        width: 100%;
+    }
+    
+    .text-box{
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        color: white;
+        text-align: center;
+        transform: translate(-50%,-50%);
+    }
+    
+    .text-box h1{
+        font-size: 62px;
+    }
+    
+    .text-box p{
+        margin:10px 0 40px;
+        font-size: 14px;
+        color: white;
+    }
+    
+    .cool-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 12px 34px;
+        font-size: 13px;
+        position: relative;
+    }
+    
+    .cool-btn:hover{
+        background: darkred;
+        border: 1px solid darkred;
+        transition: 1s;
+    }
+    
+    nav .fa {
+        display: none;
+    }
+    
+    /* Responsive design command+and slash button */
+    
+    @media (max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    
+    .nav-links ul li{
+        display: block;
+    }
+    
+    .nav-links{
+        position: fixed;
+        background:darkred;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    
+    .nav-links ul{
+        padding: 30px;
+    }
+    
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    }
+    
+    .aboutpage {
+        padding: 5px;
+        max-width: 960px;
+        width: 100%;
+        margin: 10px auto;
+        align-items: center;
+    }
+      
+    header {
+        padding: 0 15px;
+      }
+
+      .whatweofer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 50px 0;
+        
+      }
+      
+      .whatweoffer{
+        text-align: center !important;
+        flex: 1;
+        margin: 4px;
+        padding: 50px 30px;
+        line-height: 1.5em;
+        background-color: #fdf3f3;
+        border-radius: 10px;
+        
+      }
+
+      .whatweoffer h3 {
+        color: #373232;
+      }
+      
+      .whatweoffer:hover {
+        box-shadow: 0 0 11px rgba(83, 55, 55, 0.2);
+        transition: box-shadow 0.3s;
+      }
+      
+      .offertitle {
+        margin-bottom: 10px;
+      }
+      
+    
+.mycafe {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 10px auto;
+    align-items: center;
+  }
+  
+  .hovercard {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery-box {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    column-gap: 20px;
+  }
+  
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    height: 500px;
+  }
+  
+  .overlap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #b74283;
+    border-radius: 15px;
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  .texts {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .people {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 10px auto;
+    align-items: center;
+  }
+  .people-boxes {
+    display: flex;
+    width: 100%;
+    column-gap: 20px;
+  }
+  
+  .people-box {
+    padding: 3%;
+    width: 100%;
+    background-color: #fdf3f3;
+    border-radius: 10px;
+  }
+  
+  .sea {
+    margin-top: 20px;
+  }
+  
+  .texting {
+    margin: 20px 0px;
+  }
+  
+  .Avatar {
+    border-radius: 100px;
+    height: auto;
+    width: 50px !important;
+  }
+
+  .buttonn {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/images/banner2.jpg");
+    padding: 5px;
+    max-width: 960px;
+    width: 100%;
+    margin: 30px auto;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+  }
+  .buttonn h1 {
+    color: white;
+  }
+
+  .icons-foot {
+    color: red;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
